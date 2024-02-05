@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: rgb(10,225,255);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.donem_projesi.PrimaryController"> 
+    <children>
+        <Button fx:id="EnvanteriDuzenle" layoutX="325.0" layoutY="28.0" mnemonicParsing="false" onAction="#switchToEnvanteriDuzenle" text="Envanteri Düzenle" />
+        <Button fx:id="EnvantereEkle" layoutX="436.0" layoutY="28.0" mnemonicParsing="false" onAction="#switchToEnvantereEkle" text="Envantere Ekle" />
+        <TextArea fx:id="Elementler" editable="false" layoutX="18.0" layoutY="106.0" prefHeight="266.0" prefWidth="141.0" />
+        <TextArea fx:id="Bilesikler" editable="false" layoutX="159.0" layoutY="106.0" prefHeight="266.0" prefWidth="141.0" />
+        <TextArea fx:id="Deney_Arac" editable="false" layoutX="300.0" layoutY="106.0" prefHeight="266.0" prefWidth="141.0" />
+        <TextArea fx:id="Deney_Ekipman" editable="false" layoutX="441.0" layoutY="106.0" prefHeight="266.0" prefWidth="141.0" />
+        <Label fx:id="label1" alignment="CENTER" layoutX="18.0" layoutY="81.0" prefHeight="25.0" prefWidth="141.0" text="Elementler" />
+        <Label fx:id="label2" alignment="CENTER" layoutX="159.0" layoutY="81.0" prefHeight="25.0" prefWidth="141.0" text="Bileşikler" />
+        <Label fx:id="label3" alignment="CENTER" layoutX="300.0" layoutY="81.0" prefHeight="25.0" prefWidth="141.0" text="Deney Araçları" />
+        <Label fx:id="label4" alignment="CENTER" layoutX="441.0" layoutY="81.0" prefHeight="25.0" prefWidth="141.0" text="Deney Ekipmanları" />
+      <Button fx:id="EnvanteriGoruntule" layoutX="203.0" layoutY="28.0" mnemonicParsing="false" onAction="#EnvanteriGoruntule" text="Envanteri Görüntüle" />
+      <Button fx:id="YeniEnvanter" layoutX="72.0" layoutY="28.0" mnemonicParsing="false" onAction="#EnvanterOlustur" text="Yeni Envanter Oluştur" />
+    </children>
+</Pane>

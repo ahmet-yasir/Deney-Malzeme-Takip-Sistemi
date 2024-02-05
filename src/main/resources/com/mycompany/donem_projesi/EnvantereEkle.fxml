@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: rgb(10,225,255);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.donem_projesi.EnvantereEkleController">
+   <children>
+      <TextField fx:id="ElementAdi" layoutX="298.0" layoutY="152.0" prefHeight="25.0" prefWidth="149.0" visible="false" />
+      <Label fx:id="e_ad" layoutX="158.0" layoutY="152.0" prefHeight="25.0" prefWidth="140.0" text="Element Adı *" visible="false" />
+      <Label fx:id="e_sembol" layoutX="158.0" layoutY="177.0" prefHeight="25.0" prefWidth="140.0" text="Element Sembolü *" visible="false" />
+      <TextField fx:id="ElementSembolu" layoutX="298.0" layoutY="177.0" prefHeight="25.0" prefWidth="149.0" visible="false" />
+      <Label fx:id="e_miktar" layoutX="158.0" layoutY="202.0" prefHeight="25.0" prefWidth="140.0" text="Element Miktarı *" visible="false" />
+      <TextField fx:id="ElementMiktari" layoutX="298.0" layoutY="202.0" prefHeight="25.0" prefWidth="149.0" visible="false" />
+      <Button fx:id="ElementEkle" layoutX="254.0" layoutY="239.0" mnemonicParsing="false" onAction="#ElementEkle" text="Envantere Ekle" visible="false" />
+      <Label fx:id="b_ad" layoutX="158.0" layoutY="152.0" prefHeight="25.0" prefWidth="140.0" text="Bileşiğin Yaygın Adı *" visible="false" />
+      <Label fx:id="b_sad" layoutX="157.0" layoutY="176.0" prefHeight="25.0" prefWidth="140.0" text="Bileşiğin Sistematik Adı " visible="false" />
+      <Label fx:id="b_formul" layoutX="157.0" layoutY="202.0" prefHeight="25.0" prefWidth="140.0" text="Bileşiğin Formülü *" visible="false" />
+      <TextField fx:id="BilesikYayginAd" layoutX="297.0" layoutY="152.0" prefHeight="25.0" prefWidth="149.0" visible="false" />
+      <TextField fx:id="BilesikSistematikAd" layoutX="297.0" layoutY="177.0" prefHeight="25.0" prefWidth="149.0" visible="false" />
+      <TextField fx:id="BilesikFormul" layoutX="297.0" layoutY="202.0" prefHeight="25.0" prefWidth="149.0" visible="false" />
+      <Label fx:id="b_miktar" layoutX="157.0" layoutY="226.0" prefHeight="25.0" prefWidth="140.0" text="Bileşiğin Miktarı *" visible="false" />
+      <TextField fx:id="BilesikMiktar" layoutX="297.0" layoutY="227.0" prefHeight="25.0" prefWidth="149.0" visible="false" />
+      <Button fx:id="BilesikEkle" layoutX="252.0" layoutY="264.0" mnemonicParsing="false" onAction="#BilesikEkle" text="Envantere Ekle" visible="false" />
+      <Label fx:id="m_ad" layoutX="174.0" layoutY="152.0" prefHeight="25.0" prefWidth="103.0" text="Malzeme Adı *" visible="false" />
+      <Label fx:id="m_cins" layoutX="174.0" layoutY="176.0" prefHeight="25.0" prefWidth="103.0" text="Malzeme Cinsi *" visible="false" />
+      <Label fx:id="m_hacim" layoutX="174.0" layoutY="201.0" prefHeight="25.0" prefWidth="103.0" text="Malzeme Hacmi *" visible="false" />
+      <Label fx:id="m_adet" layoutX="174.0" layoutY="226.0" prefHeight="25.0" prefWidth="103.0" text="Malzeme Adeti *" visible="false" />
+      <TextField fx:id="MalzemeAdi" layoutX="286.0" layoutY="152.0" visible="false" />
+      <TextField fx:id="MalzemeCinsi" layoutX="286.0" layoutY="178.0" visible="false" />
+      <TextField fx:id="MalzemeHacmi" layoutX="286.0" layoutY="203.0" visible="false" />
+      <TextField fx:id="MalzemeAdeti" layoutX="286.0" layoutY="227.0" visible="false" />
+      <Button fx:id="MalzemeEkle" layoutX="251.0" layoutY="264.0" mnemonicParsing="false" onAction="#DeneyAraciEkle" text="Envantere Ekle" visible="false" />
+      <Label fx:id="ek_ad" layoutX="171.0" layoutY="153.0" prefHeight="25.0" prefWidth="103.0" text="Ekipman Adı *" visible="false" />
+      <Label fx:id="ek_adet" layoutX="171.0" layoutY="177.0" prefHeight="25.0" prefWidth="103.0" text="Ekipman Adeti *" visible="false" />
+      <TextField fx:id="EkipmanAdi" layoutX="283.0" layoutY="153.0" visible="false" />
+      <TextField fx:id="EkipmanAdeti" layoutX="283.0" layoutY="178.0" visible="false" />
+      <Button fx:id="EkipmanEkle" layoutX="251.0" layoutY="216.0" mnemonicParsing="false" onAction="#DeneyEkipmanEkle" text="Envantere Ekle" visible="false" />
+      <Button fx:id="AnaMenu" layoutX="263.0" layoutY="324.0" mnemonicParsing="false" onAction="#switchToAnaMenu" text="Ana Menü" />
+      <Label fx:id="Bilgi" alignment="CENTER" layoutX="157.0" layoutY="115.0" prefHeight="25.0" prefWidth="289.0" visible="false" />
+      <ComboBox fx:id="cBox" layoutX="227.0" layoutY="79.0" onAction="#MenuKontrol" prefWidth="150.0" promptText="Seçiniz" />
+   </children>
+</Pane>
